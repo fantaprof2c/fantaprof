@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta charset="utf-8">
+
+        <title>Sito ufficiale del fantaprof</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="asta.html">Asta</a>
+            <a class="active" href="#">About</a>
+            <label style="margin: 7px;" class="switch">
+                <input type="checkbox" checked>
+                <span onclick="themeSwitch()" class="slider round"></span>
+            </label>
+            <div class="login-container">
+                <input id="ns" type="number" min="1" max="5" title="Inserisci il numero della squadra" placeholder="Squadra" name="email">
+                <input id="codice" type="text" maxlength="4" title="Inserisci il codice dato dagli arbitri" placeholder="Codice" name="password">
+                <button onmousewheel="rickroll()" onclick="autentica()">Autentica</button>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+        <script src="asta.js"></script>
+
+    </body>
+
+</html>
